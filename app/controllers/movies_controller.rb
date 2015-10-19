@@ -21,7 +21,9 @@ class MoviesController < ApplicationController
   # be using mass assignment without an explicit permit step.
   # This is the recommended form:
   def create
-    Movie.create(movie_params)
+    @movie = Movie.create(movie_params)
+    flash[:notice] = "#{@movie.title} was successfully created."
+    redirect_to movies_path
   end
   
   
