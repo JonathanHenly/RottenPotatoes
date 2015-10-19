@@ -12,6 +12,10 @@ class MoviesController < ApplicationController
     # will render app/views/movies/show.html.haml by default
   end
   
+  def new
+    # default: render 'new' template
+  end
+  
   # Using "Movie.create(params[:movie])" would raise an
   # ActiveModel::ForbiddenAttributes exception because it'd
   # be using mass assignment without an explicit permit step.
