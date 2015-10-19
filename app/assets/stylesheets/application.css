@@ -75,11 +75,20 @@ table#movies th, table#movies td {
 }
 
 #notice, #warning {
-  background: rosybrown;
   margin: 1em 0;
   padding: 4px;
   text-align: center;
   border: 1px solid black;
+}
+
+#notice {
+  background: gray;
+  color: blue;
+}
+
+#warning {
+  background: rosybrown;
+  color: red;
 }
 
 form label {
