@@ -13,7 +13,7 @@ more_movies = [
     :release_date => '21-Jul-1989'},
   {:title => 'The Help', :rating => 'PG-13',
     :release_date => '10-Aug-2011'},
-  {:title => 'Raider of the Lost Ark', :rating => 'PG',
+  {:title => 'Raiders of the Lost Ark', :rating => 'PG',
     :release_date => '12-Jun-1981'}
 ]
 

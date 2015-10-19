@@ -1,4 +1,17 @@
-class MovieController < ActionController::Base
+class MoviesController < ApplicationController
+  
+  def index
+    @movies = Movie.all
+  end
+  
+  def show
+    # retrieve movie ID from URI route
+    id = params[:id]
+    # look up movie by unique ID
+    @movie = Movie.find(id)
+    # will render app/views/movies/show.html.haml by default
+  end
+  
   # Using "Movie.create(params[:movie])" would raise an
   # ActiveModel::ForbiddenAttributes exception because it'd
   # be using mass assignment without an explicit permit step.
